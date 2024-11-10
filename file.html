@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huzaifa Dynamic Resume</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        .resume-container{
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1{
+            text-align: center;
+            font-size: 36px;
+            color: #007bff;
+        }
+        header p{
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+        section{
+            margin-bottom: 20px;
+        }
+        section h2{
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        form label{
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button{
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button :hover{
+            background-color: #0056b3;
+        }
+
+        ul {
+           list-style-type: none;
+           padding-left: 0;
+        }
+
+        ul li {
+           margin-bottom: 10px;
+           padding: 5px;
+           background-color: #f0f0f0;
+           border-radius: 5px;
+        }
+
+        footer {
+           text-align: center;
+           margin-top: 30px;
+           color: #777;
+        }
+    </style>
+</head>
+<body>
+<div class="resume-container">
+    <header>
+        <h1>Dynamic Resume</h1>
+        <p>Create and update your resume dynamically!</p>
+    </header>
+    
+    <section>
+    <h2>Personal Information</h2>
+    <form id="personalInfoForm">
+        <label for="name">Full Name:</label>
+        <input type="name" name="name" id="name" required>
+
+        <label for="Job Title">Job Title:</label>
+        <input type="Job Title" name="Job Title" id="Job Title" required>
+        <button type="submit">Save Personal Info</button>
+    </form>
+</section>
+
+<section>
+    <h2>Contact Information</h2>
+    <form id="personalInfoForm">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="Phone">Phone</label>
+        <input type="phone" name="phone" id="phone" required>
+
+        <label for="linkedin">Linkedin:</label>
+        <input type="linkedin" name="linkedin" id="linkedin" required>
+        <button type="submit">Save Contact Info</button>
+    </form>
+</section>
+
+<section>
+    <form id="skillsForm">
+        <label for="add skills">Add Skills:</label>
+        <input type="add skills" name="add skills" id="add skills" required>
+        <button type="Submit">Add Skill</button>
+    </form>
+</section>
+
+<section>
+    <h2>Work Experience</h2>
+    <form id="experienceForm">
+      <label for="jobTitleExperience">Job Title:</label>
+      <input type="text" id="jobTitleExperience" name="jobTitleExperience" required>
+
+      <label for="company">Company:</label>
+      <input type="text" id="company" name="company" required>
+
+      <label for="duration">Duration:</label>
+      <input type="text" id="duration" name="duration" required>
+
+      <label for="description">Job Description:</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <button type="submit">Add Experience</button>
+    </form>
+    <div id="workExperience">
+      <!-- Dynamically added work experiences will appear here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Name</p>
+  </footer>
+</div>
+</body>
+</html>
